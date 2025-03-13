@@ -2,24 +2,6 @@
 
 
 
-
-
-// Disable Dragging (Images, Links, etc.)
-document.addEventListener("dragstart", (event) => event.preventDefault());
-
-// Disable Copy and Paste
-document.addEventListener("copy", (event) => event.preventDefault());
-document.addEventListener("paste", (event) => event.preventDefault());
-
-
-
-getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
-
-
-
-
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
