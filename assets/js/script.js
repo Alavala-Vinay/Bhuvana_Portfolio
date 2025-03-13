@@ -2,23 +2,7 @@
 
 
 
-// Disable Long Press (Mobile)
-document.addEventListener("touchstart", (event) => {
-  if (event.touches.length > 1) {
-    event.preventDefault();
-  }
-}, { passive: false });
 
-
-// Disable Keyboard Shortcuts (Ctrl+S, Ctrl+U, F12)
-document.addEventListener("keydown", (event) => {
-  if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
-    event.preventDefault();
-  }
-  if (event.key === "F12") {
-    event.preventDefault();
-  }
-});
 
 // Disable Dragging (Images, Links, etc.)
 document.addEventListener("dragstart", (event) => event.preventDefault());
