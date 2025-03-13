@@ -8,17 +8,17 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 100%, 90%,) 3%,  /* Light Blue */
-    hsl(320, 100%, 92%,) 50%, /* Light Pink */
-    hsl(260, 100%, 90%) 97%  /* Light Purple */
+    hsl(220, 100%, 90%) 3%,  /* Light Blue */
+    hsl(320, 100%, 92%) 50%, /* Light Pink */
+    hsl(260, 100%, 96%) 97%  /* Lighter Purple */
   );
 
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
     hsla(220, 62%, 43%, 0.3) 0%, 
     hsla(320, 100%, 85%, 0.2) 50%, 
-    hsla(260, 61%, 64%, 0) 100%
-  ), hsl(240, 64%, 74%);
+    hsla(260, 100%, 85%, 0) 100%  /* Lighter Purple */
+  ), hsl(240, 64%, 85%);
 
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
@@ -30,12 +30,12 @@
     135deg, 
     hsla(220, 100%, 85%, 0.3) 0%, 
     hsla(320, 100%, 85%, 0.2) 59.86%
-  ), hsl(260, 100%, 93%);
+  ), hsl(260, 100%, 96%); /* Lighter Purple */
 
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(220, 75%, 64%) 0%, 
-    hsla(260, 100%, 82%, 0) 50%
+    hsla(260, 100%, 90%, 0) 50% /* Lighter Purple */
   );
 
   --text-gradient-yellow: linear-gradient(
@@ -48,9 +48,9 @@
 
   --jet: hsl(220, 100%, 80%);
   --onyx: hsl(320, 100%, 78%);
-  --eerie-black-1: hsl(260, 100%, 75%);
-  --eerie-black-2: hsl(260, 100%, 73%);
-  --smoky-black: hsl(260, 100%, 70%);
+  --eerie-black-1: hsl(260, 100%, 88%); /* Lighter Purple */
+  --eerie-black-2: hsl(260, 100%, 86%); /* Lighter Purple */
+  --smoky-black: hsl(260, 100%, 84%); /* Lighter Purple */
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 100%);
   --orange-yellow-crayola: hsl(0, 0%, 100%);
@@ -58,6 +58,8 @@
   --light-gray: hsl(0, 0%, 100%);
   --light-gray-70: hsla(0, 2%, 13%, 0.7);
   --bittersweet-shimmer: hsl(0, 0%, 100%);
+
+
 
   /**
    * typography
