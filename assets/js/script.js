@@ -1,6 +1,39 @@
 'use strict';
 
+document.addEventListener("contextmenu", (event) => event.preventDefault());
 
+        // Disable Long Press (Mobile)
+        document.addEventListener("touchstart", function(event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        // Prevent Screenshots (Blur Content When Switching Apps)
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.body.style.filter = "blur(10px)";
+            } else {
+                document.body.style.filter = "none";
+            }
+        });
+
+        // Disable Keyboard Shortcuts (Prevent SS & DevTools)
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
+                event.preventDefault();
+            }
+            if (event.key === "F12") {
+                event.preventDefault();
+            }
+        });
+
+        // Disable Dragging (Prevent Image/Content Drag)
+        document.addEventListener("dragstart", (event) => event.preventDefault());
+
+        // Disable Copy & Paste
+        document.addEventListener("copy", (event) => event.preventDefault());
+        document.addEventListener("paste", (event) => event.preventDefault());
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
