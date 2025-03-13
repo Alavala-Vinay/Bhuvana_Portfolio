@@ -1,7 +1,6 @@
 'use strict';
 
-// Disable Right Click
-document.addEventListener("contextmenu", (event) => event.preventDefault());
+
 
 // Disable Long Press (Mobile)
 document.addEventListener("touchstart", (event) => {
