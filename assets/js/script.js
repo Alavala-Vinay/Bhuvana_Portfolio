@@ -27,23 +27,11 @@ document.addEventListener("dragstart", (event) => event.preventDefault());
 document.addEventListener("copy", (event) => event.preventDefault());
 document.addEventListener("paste", (event) => event.preventDefault());
 
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-        alert("Screenshot detected! This action is not allowed.");
-        // You can also redirect or blur the screen
-        document.body.style.filter = "blur(10px)";
-    }
-});
+
 
 getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
-document.addEventListener("visibilitychange", function() {
-    if (document.hidden) {
-        document.body.style.visibility = "hidden"; // Hide content when switching apps
-    } else {
-        document.body.style.visibility = "visible";
-    }
-});
+
 
 
 
