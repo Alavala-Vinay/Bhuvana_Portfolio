@@ -16,24 +16,29 @@ document.addEventListener("contextmenu", (event) => event.preventDefault());
             }
         }, { passive: false });
 
-        // Prevent Screenshots (Blur Content When Switching Apps)
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.body.style.filter = "blur(10px)";
-            } else {
-                document.body.style.filter = "none";
-            }
-        });
-
-        // Disable Keyboard Shortcuts (Prevent SS & DevTools)
         document.addEventListener("keydown", function(event) {
-            if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
-                event.preventDefault();
-            }
-            if (event.key === "F12") {
-                event.preventDefault();
-            }
-        });
+    // Disable Windows/Linux shortcuts
+    if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
+        event.preventDefault();
+    }
+    
+    // Disable F12 (DevTools)
+    if (event.key === "F12") {
+        event.preventDefault();
+    }
+    
+    // Disable Mac Screenshot Shortcuts
+    if (event.metaKey && (event.key === "s" || event.key === "p" || event.key === "u")) {
+        event.preventDefault();
+    }
+    
+    // Attempt to block Mac screenshot shortcuts (Limited Effect)
+    if (event.metaKey && event.shiftKey && (event.key === "3" || event.key === "4" || event.key === "5")) {
+        event.preventDefault();
+        alert("Screenshots are disabled on this page.");
+    }
+});
+
 
         // Disable Dragging (Prevent Image/Content Drag)
         document.addEventListener("dragstart", (event) => event.preventDefault());
