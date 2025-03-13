@@ -1,4 +1,11 @@
 'use strict';
+if (navigator.userAgent.toLowerCase().includes("android")) {
+            setInterval(() => {
+                if (document.hidden) {
+                    alert("Screenshot detected! This action is not allowed.");
+                }
+            }, 1000);
+        }
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
