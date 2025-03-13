@@ -9,8 +9,6 @@ document.addEventListener("touchstart", (event) => {
   }
 }, { passive: false });
 
-// Disable Text Selection
-document.addEventListener("selectstart", (event) => event.preventDefault());
 
 // Disable Keyboard Shortcuts (Ctrl+S, Ctrl+U, F12)
 document.addEventListener("keydown", (event) => {
