@@ -1,5 +1,54 @@
 'use strict';
 
+// Disable Right Click
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+// Disable Long Press (Mobile)
+document.addEventListener("touchstart", (event) => {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, { passive: false });
+
+// Disable Text Selection
+document.addEventListener("selectstart", (event) => event.preventDefault());
+
+// Disable Keyboard Shortcuts (Ctrl+S, Ctrl+U, F12)
+document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && (event.key === "s" || event.key === "u" || event.key === "p")) {
+    event.preventDefault();
+  }
+  if (event.key === "F12") {
+    event.preventDefault();
+  }
+});
+
+// Disable Dragging (Images, Links, etc.)
+document.addEventListener("dragstart", (event) => event.preventDefault());
+
+// Disable Copy and Paste
+document.addEventListener("copy", (event) => event.preventDefault());
+document.addEventListener("paste", (event) => event.preventDefault());
+
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        alert("Screenshot detected! This action is not allowed.");
+        // You can also redirect or blur the screen
+        document.body.style.filter = "blur(10px)";
+    }
+});
+
+getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        document.body.style.visibility = "hidden"; // Hide content when switching apps
+    } else {
+        document.body.style.visibility = "visible";
+    }
+});
+
+
 
 
 // element toggle function
