@@ -4,6 +4,10 @@
    * colors
    */
 
+	button, a,li {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
