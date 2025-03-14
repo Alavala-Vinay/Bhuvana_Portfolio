@@ -4,59 +4,64 @@
    * colors
    */
 
-	button, a,li {
+	button, a, li {
     -webkit-tap-highlight-color: transparent;
-  }
-  /* gradient */
+}
 
-  --bg-gradient-onyx: linear-gradient(
+/* gradient */
+
+--bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 95%) 3%,  /* Very Light Gray */
-    hsl(0, 0%, 92%) 50%, /* Soft Gray */
-    hsl(270, 100%, 90%) 97%  /* Light Purple */
-  );
+    hsl(270, 100%, 95%) 3%,  /* Very Light Purple */
+    hsl(270, 100%, 92%) 50%, /* Soft Lavender */
+    hsl(270, 100%, 90%) 97%  /* Gentle Pastel Purple */
+);
 
-  --bg-gradient-jet: linear-gradient(
+--bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(0, 0%, 53%, 0.3) 0%, 
-    hsla(0, 0%, 61%, 0.2) 50%, 
-    hsla(270, 100%, 85%, 0.2) 100%
-  ), hsl(0, 0%, 96%);
+    hsla(270, 62%, 43%, 0.3) 0%, 
+    hsla(270, 100%, 85%, 0.2) 50%, 
+    hsla(270, 61%, 64%, 0) 100%
+), hsl(270, 64%, 74%);
 
-  --bg-gradient-light-gray: linear-gradient(
+--bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 98%) 0%, 
-    hsla(0, 0%, 97%, 0.4) 50%
-  );
+    hsl(270, 100%, 95%) 0%, 
+    hsla(270, 100%, 93%, 0.4) 50%
+);
 
-  --bg-gradient-purple: linear-gradient(
+--bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(270, 100%, 92%, 0.3) 0%, 
-    hsla(270, 100%, 89%, 0.2) 59.86%
-  ), hsl(270, 100%, 95%);
+    hsla(270, 100%, 85%, 0.3) 0%, 
+    hsla(270, 100%, 85%, 0.2) 59.86%
+), hsl(270, 100%, 93%);
 
-  --border-gradient-onyx: linear-gradient(
+--border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(270, 100%, 85%) 0%, 
-    hsla(270, 100%, 80%, 0) 50%
-  );
+    hsl(270, 75%, 80%) 0%, 
+    hsla(270, 100%, 82%, 0) 50%
+);
 
-  --text-gradient: linear-gradient(
+--text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(0, 0%, 0%), /* Black */
-    hsl(0, 0%, 20%)  /* Dark Gray */
-  );
+    hsl(270, 100%, 30%), /* Dark Purple */
+    hsl(270, 100%, 30%)  /* Dark Purple */
+);
 
-  /* solid */
+/* solid */
 
-  --jet: hsl(0, 0%, 85%);
-  --onyx: hsl(270, 100%, 80%); /* Lighter Purple */
-  --eerie-black-1: hsl(0, 0%, 78%);
-  --eerie-black-2: hsl(0, 0%, 75%);
-  --smoky-black: hsl(0, 0%, 70%);
-  --black: hsl(0, 0%, 0%);
-  --light-gray: hsl(0, 0%, 96%);
-  --bittersweet-shimmer: hsl(270, 100%, 88%); /* Light Purple */
+--jet: hsl(270, 100%, 85%);
+--onyx: hsl(270, 100%, 82%);
+--eerie-black-1: hsl(270, 100%, 80%);
+--eerie-black-2: hsl(270, 100%, 78%);
+--smoky-black: hsl(270, 100%, 75%);
+--white-1: hsl(270, 100%, 98%);
+--white-2: hsl(270, 100%, 96%);
+--orange-yellow-crayola: hsl(270, 100%, 90%);
+--vegas-gold: hsl(270, 80%, 85%);
+--light-gray: hsl(270, 20%, 95%);
+--light-gray-70: hsla(270, 20%, 95%, 0.7);
+--bittersweet-shimmer: hsl(270, 80%, 88%);
 
 
 
