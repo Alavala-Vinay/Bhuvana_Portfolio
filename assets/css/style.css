@@ -7,7 +7,6 @@
 	button, a,li {
     -webkit-tap-highlight-color: transparent;
   }
-
   /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
@@ -58,6 +57,7 @@
   --black: hsl(0, 0%, 0%);
   --light-gray: hsl(0, 0%, 96%);
   --bittersweet-shimmer: hsl(270, 100%, 88%); /* Light Purple */
+
 
 
   /* Text Color */
