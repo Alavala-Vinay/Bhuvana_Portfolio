@@ -10,59 +10,56 @@
 
   /* gradient */
 
-   --bg-gradient-onyx: linear-gradient(
+  --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 100%, 90%) 3%,  /* Light Blue */
-    hsl(320, 100%, 92%) 50%, /* Light Pink */
-    hsl(260, 100%, 90%) 97%  /* Light Purple */
+    hsl(0, 0%, 95%) 3%,  /* Very Light Gray */
+    hsl(0, 0%, 92%) 50%, /* Soft Gray */
+    hsl(270, 100%, 90%) 97%  /* Light Purple */
   );
 
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(220, 100%, 85%, 0.3) 0%, 
-    hsla(320, 100%, 85%, 0.2) 50%, 
-    hsla(260, 100%, 85%, 0) 100%
-  ), hsl(240, 100%, 95%);
+    hsla(0, 0%, 53%, 0.3) 0%, 
+    hsla(0, 0%, 61%, 0.2) 50%, 
+    hsla(270, 100%, 85%, 0.2) 100%
+  ), hsl(0, 0%, 96%);
 
-  --bg-gradient-yellow-1: linear-gradient(
+  --bg-gradient-light-gray: linear-gradient(
     to bottom right, 
-    hsl(220, 100%, 95%) 0%, 
-    hsla(320, 100%, 93%, 0.4) 50%
+    hsl(0, 0%, 98%) 0%, 
+    hsla(0, 0%, 97%, 0.4) 50%
   );
 
-  --bg-gradient-yellow-2: linear-gradient(
+  --bg-gradient-purple: linear-gradient(
     135deg, 
-    hsla(220, 100%, 85%, 0.3) 0%, 
-    hsla(320, 100%, 85%, 0.2) 59.86%
-  ), hsl(260, 100%, 93%);
+    hsla(270, 100%, 92%, 0.3) 0%, 
+    hsla(270, 100%, 89%, 0.2) 59.86%
+  ), hsl(270, 100%, 95%);
 
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(220, 100%, 85%) 0%, 
-    hsla(260, 100%, 82%, 0) 50%
+    hsl(270, 100%, 85%) 0%, 
+    hsla(270, 100%, 80%, 0) 50%
   );
 
-  --text-gradient-yellow: linear-gradient(
+  --text-gradient: linear-gradient(
     to right, 
-    hsl(220, 100%, 85%), 
-    hsl(320, 100%, 82%), 
-    hsl(260, 100%, 80%)
+    hsl(0, 0%, 0%), /* Black */
+    hsl(0, 0%, 20%)  /* Dark Gray */
   );
 
   /* solid */
 
-  --jet: hsl(220, 100%, 80%);
-  --onyx: hsl(320, 100%, 78%);
-  --eerie-black-1: hsl(260, 100%, 75%);
-  --eerie-black-2: hsl(260, 100%, 73%);
-  --smoky-black: hsl(260, 100%, 70%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(220, 100%, 85%);
-  --vegas-gold: hsl(320, 80%, 75%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(260, 80%, 65%);
+  --jet: hsl(0, 0%, 85%);
+  --onyx: hsl(270, 100%, 80%); /* Lighter Purple */
+  --eerie-black-1: hsl(0, 0%, 78%);
+  --eerie-black-2: hsl(0, 0%, 75%);
+  --smoky-black: hsl(0, 0%, 70%);
+  --black: hsl(0, 0%, 0%);
+  --light-gray: hsl(0, 0%, 96%);
+  --bittersweet-shimmer: hsl(270, 100%, 88%); /* Light Purple */
+
+
   /* Text Color */
 
   /* Text Color */
