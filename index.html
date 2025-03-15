@@ -1718,23 +1718,20 @@ Supreme Court of India
         </section>
 
         <section class="contact-form">
+        <h3 class="form-title" style="color: rgb(214, 215, 215);">Contact Form</h3>
 
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSdhpaX2ksIvwrTFGkGBnuSRSuh5sO9SATX8A3OqOjwyufqCvQ/formResponse" method="POST">
+        <form onsubmit="sendMail(event)">
             <div class="input-wrapper">
-              <input type="text" name="entry.YOUR_ENTRY_ID" class="form-input" placeholder="Full name" required>
-              <input type="email" name="entry.YOUR_ENTRY_ID" class="form-input" placeholder="Email address" required>
+                <input type="text" id="fullname" class="form-input" placeholder="Full name" required>
+                <input type="email" id="email" class="form-input" placeholder="Email address" required>
             </div>
-            <textarea name="entry.Full" class="form-input" placeholder="Your Message" required></textarea>
+
+            <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
+
             <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+                Send Message
             </button>
-          </form>
-
-          
-
+        </form>
         </section>
 
       </article>
