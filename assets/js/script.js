@@ -1,5 +1,20 @@
 'use strict';
 
+function sendMail(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const fullname = document.getElementById("fullname").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Create the mailto link
+  const mailtoLink = `mailto:sudhabhuvaneswari@dsnlu.ac.in?subject=New Inquiry from ${fullname} Submission&body=Hello, This is ${encodeURIComponent(fullname)}%0D%0A%0D%0A ${encodeURIComponent(message)}`;
+
+  // Open the default email client
+  window.location.href = mailtoLink;
+}
+
+
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
