@@ -8,7 +8,7 @@ function sendMail(event) {
   const message = document.getElementById("message").value;
 
   // Create the mailto link
-  const mailtoLink = `mailto:sudhabhuvaneswari@dsnlu.ac.in?subject=New Inquiry from ${fullname} Submission&body=Hello, This is ${encodeURIComponent(fullname)}%0D%0A%0D%0A ${encodeURIComponent(message)}`;
+  const mailtoLink = `mailto:sudhabhuvaneswari@dsnlu.ac.in?subject=New Inquiry from ${fullname} &body=Hello, This is ${encodeURIComponent(fullname)}%0D%0A%0D%0A ${encodeURIComponent(message)}`;
 
   // Open the default email client
   window.location.href = mailtoLink;
