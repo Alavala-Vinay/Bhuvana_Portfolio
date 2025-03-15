@@ -1,5 +1,22 @@
 'use strict';
 
+document.addEventListener('copy', function(event) {
+  event.preventDefault();
+});
+
+document.addEventListener('paste', function(event) {
+  event.preventDefault();
+});
+
+// Allow copy-paste inside the form only
+document.querySelector('.contact-form').addEventListener('copy', function(event) {
+  event.stopPropagation();
+});
+
+document.querySelector('.contact-form').addEventListener('paste', function(event) {
+  event.stopPropagation();
+});
+
 function sendMail(event) {
   event.preventDefault(); // Prevent default form submission
 
